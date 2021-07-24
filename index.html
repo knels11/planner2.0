@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>24 Hour Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3"> Day Planner </h1>
+      <p class="lead">A simple calendar app for planning your 24 hours. How will you use your time? </p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row" id="after-hours">
+
+        <div class="col-2 col-sm-4 col-md-6" id="midnight-task">
+          <span class= "task-input"> 
+            <textarea id="toDo"></textarea>
+          </span>
+          </div>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="1am-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="2am-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id="morning-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="3am">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="4am">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="5am">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id="morning-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="6am-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="7am-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="8am-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id="morning-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="9am-task"> 
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="10am-task"> 
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="11am-task"> 
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id="lunch-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="12pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="1pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="2pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="row" id="evening-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="3pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="4pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="5pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="row" id="evening-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="6pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="7pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="8pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="row" id="evening-time">
+
+        <div class="col-2 col-sm-4 col-md-6" id="9pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="10pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+        <div class="col-2 col-sm-4 col-md-6" id="11pm-task">
+          <span class="task-input">
+            <textarea id="toDo"></textarea>
+          </span>
+        </div>
+
+      </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
