@@ -1,0 +1,82 @@
+*{
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { 
+margin:50px 50px;
+display:flex;
+flex-direction:column;
+background-color:gainsboro;
+}
+.navigation-bar{
+display:flex;
+flex-wrap:wrap;
+align-items: center;
+border: 2px solid #353535;
+display: flex;
+height: 80px;
+justify-content: center;
+position: center;
+width: 900px;
+font-size:16px;
+}
+.nav-items {
+display:flex;
+justify-content:space-between;
+list-style: none;
+flex-direction:row;
+}
+img {
+border: 1px solid blue;;
+width: 150px;
+height: 150px;
+border: 50%;
+}
+.intro{ 
+margin:10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+list-style-position: initial;
+list-style: none;
+font-size:16px;
+
+}
+.project1, .project2, .project3{
+display:flex;
+justify-content:space-between;
+margin: 10px;
+padding:7px 10px;
+border:2px solid black;
+font-size:16px;
+}
+p{
+    display:flex;
+    justify-content:center;
+    font-size: 18px;
+    }
+footer{
+flex-wrap:wrap;
+flex-direction:row;
+border:2px solid black;
+justify-content:space-between;
+font-size:16px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin:10px;
+padding:90px;
+align-content:flex-end;
+}
+.contact, h3{
+align-items: center;
+}
+.phone, .email, .git, .linkedin, h3{
+display:flex;
+justify-content:space-between;
+margin: 10px;
+padding:10px;
+border:2px solid black;
+font-size:14px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-style:italic;
+}
