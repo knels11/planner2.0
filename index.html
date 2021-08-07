@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
     <title>24 Hour Scheduler</title>
   </head>
@@ -27,186 +26,237 @@
       <h1 class="display-3"> Day Planner </h1>
       <p class="lead">A simple calendar app for planning your 24 hours. How will you use your time? </p>
       <p id="currentDay" class="lead"></p>
+      <div class="ml-md-auto w-100 w-md-auto">
+          <button id="remove-tasks" class="btn btn-block btn-danger mb-2 mb-md-4">
+          </span> Delete All Tasks </button>
+      </div>
     </header>
-
     
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="row" id="after-hours">
+    <main class= "col-12 col-lg-9 d-flex flex-column" id="container">
+    <!--  <div class="m-5 row justify-content-around" id="after-hours"> -->
 
-        <div class="col-2 col-sm-4 col-md-6" id="midnight-task">
-          <span class= "task-input"> 
-            <textarea id="toDo"></textarea>
-          </span>
+  <!-- Timeblocks go here -->
+  <!--12AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>12AM</strong></span>
+            <textarea class="12AM-task"> </textarea>
+            <button id="12AM" class="submit-btn"> Add Task </button>
+              <ul id="12AM-toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+  <!--1AM-->
+  <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+    <div class="card">
+      <span class= "task-input"> <strong>1AM</strong></span>
+      <textarea class="1AM-task"> </textarea>
+            <button id="1AM" class="submit-btn"> Add Task </button>
+        <ul id="toDo" class= "list-group list-group-flush"></ul>
+      </div>
+    </div>
+    <!--2AM-->
+    <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+      <div class="card">
+        <span class= "task-input"> <strong>2AM</strong></span>
+        <textarea class="2AM-task"> </textarea>
+            <button id="2AM" class="submit-btn"> Add Task </button>
+          <ul id="toDo" class= "list-group list-group-flush"></ul>
+        </div>
+      </div>
+      <!--3AM-->
+      <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="card">
+          <span class= "task-input"> <strong>3AM</strong></span>
+          <textarea class="3AM-task"> </textarea>
+            <button id="3AM" class="submit-btn"> Add Task </button>
+            <ul id="toDo" class= "list-group list-group-flush"></ul>
           </div>
         </div>
+        <!--4AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>4AM</strong></span>
+            <textarea class="4AM-task"> </textarea>
+            <button id="4AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--5AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>5AM</strong></span>
+            <textarea class="5AM-task"> </textarea>
+            <button id="5AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--6AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>6AM</strong></span>
+            <textarea class="6AM-task"> </textarea>
+            <button id="6AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--7AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>7AM</strong></span>
+            <textarea class="7AM-task"> </textarea>
+            <button id="7AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+        <!--8AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>8AM</strong></span>
+            <textarea class="8AM-task"> </textarea>
+            <button id="8AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--9AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>9AM</strong></span>
+            <textarea class="9AM-task"> </textarea>
+            <button id="9AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--10AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>10AM</strong></span>
+            <textarea class="10AM-task"> </textarea>
+            <button id="10AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--11AM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>11AM</strong></span>
+            <textarea class="11AM-task"> </textarea>
+            <button id="11AM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--12PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>12PM</strong></span>
+            <textarea class="12PM-task"> </textarea>
+            <button id="12PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--1PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>1PM</strong></span>
+            <textarea class="1PM-task"> </textarea>
+            <button id="1PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--2PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>2PM</strong></span>
+            <textarea class="2PM-task"> </textarea>
+            <button id="2PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--3PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>3PM</strong></span>
+            <textarea class="3PM-task"> </textarea>
+            <button id="3PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--4PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>4PM</strong></span>
+            <textarea class="4PM-task"> </textarea>
+            <button id="4PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--5PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>5PM</strong></span>
+            <textarea class="5PM-task"> </textarea>
+            <button id="5PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--6PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>6PM</strong></span>
+            <textarea class="6PM-task"> </textarea>
+            <button id="6PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--7PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>7PM</strong></span>
+            <textarea class="7PM-task"> </textarea>
+            <button id="7PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--8PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>8PM</strong></span>
+            <textarea class="8PM-task"> </textarea>
+            <button id="8PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--9PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>9PM</strong></span>
+            <textarea class="9PM-task"> </textarea>
+            <button id="9PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--10PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>10PM</strong></span>
+            <textarea class="10PM-task"> </textarea>
+            <button id="10PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
+          <!--11PM-->
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+          <div class="card">
+            <span class= "task-input"> <strong>11PM</strong></span>
+            <textarea class="11PM-task"> </textarea>
+            <button id="11PM" class="submit-btn"> Add Task </button>
+              <ul id="toDo" class= "list-group list-group-flush"></ul>
+            </div>
+          </div>
 
-        <div class="col-2 col-sm-4 col-md-6" id="1am-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
         </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="2am-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-      </div>
-
-      <div class="row" id="morning-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="3am">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="4am">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="5am">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-      </div>
-
-      <div class="row" id="morning-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="6am-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="7am-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="8am-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-      </div>
-
-      <div class="row" id="morning-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="9am-task"> 
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="10am-task"> 
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="11am-task"> 
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-      </div>
-
-      <div class="row" id="lunch-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="12pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="1pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="2pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-      </div>
-
-      <div class="row" id="evening-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="3pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="4pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="5pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-      </div>
-
-      <div class="row" id="evening-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="6pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="7pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="8pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-      </div>
-
-      <div class="row" id="evening-time">
-
-        <div class="col-2 col-sm-4 col-md-6" id="9pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="10pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-        <div class="col-2 col-sm-4 col-md-6" id="11pm-task">
-          <span class="task-input">
-            <textarea id="toDo"></textarea>
-          </span>
-        </div>
-
-      </div>
-      </div>
-
+      </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
