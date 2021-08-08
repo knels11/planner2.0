@@ -24,8 +24,13 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3"> Day Planner </h1>
-      <p class="lead">A simple calendar app for planning your 24 hours. How will you use your time? </p>
+      <p class="lead">A simple calendar app for planning your day. Everyone has the same 24 hours, how will you use your time? </p>
+      <!--Borrowed code from Norma: Start-->
       <p id="currentDay" class="lead"></p>
+            <script>
+                document.write(Date());
+            </script>
+      <!--Borrowed code from Norma: End-->
       <div class="ml-md-auto w-100 w-md-auto">
           <button id="remove-tasks" class="btn btn-block btn-danger mb-2 mb-md-4">
           </span> Delete All Tasks </button>
@@ -33,9 +38,7 @@
     </header>
     
     <main class= "col-12 col-lg-9 d-flex flex-column" id="container">
-    <!--  <div class="m-5 row justify-content-around" id="after-hours"> -->
-
-  <!-- Timeblocks go here -->
+  <!--midnight row block start-->
   <!--12AM-->
         <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
           <div class="card">
@@ -99,6 +102,8 @@
               <ul id="toDo" class= "list-group list-group-flush"></ul>
             </div>
           </div>
+        <!--midnight row block end-->
+        <!--morning row block-->
           <!--7AM-->
         <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
           <div class="card">
@@ -144,6 +149,7 @@
               <ul id="toDo" class= "list-group list-group-flush"></ul>
             </div>
           </div>
+        <!--lunchtime row block start-->
           <!--12PM-->
         <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
           <div class="card">
@@ -189,8 +195,10 @@
               <ul id="toDo" class= "list-group list-group-flush"></ul>
             </div>
           </div>
+          <!--lunchtime row block end-->
+          <!--evening row block start-->
           <!--5PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>5PM</strong></span>
             <textarea class="5PM-task"> </textarea>
@@ -199,7 +207,7 @@
             </div>
           </div>
           <!--6PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>6PM</strong></span>
             <textarea class="6PM-task"> </textarea>
@@ -208,7 +216,7 @@
             </div>
           </div>
           <!--7PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>7PM</strong></span>
             <textarea class="7PM-task"> </textarea>
@@ -217,7 +225,7 @@
             </div>
           </div>
           <!--8PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>8PM</strong></span>
             <textarea class="8PM-task"> </textarea>
@@ -226,7 +234,7 @@
             </div>
           </div>
           <!--9PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>9PM</strong></span>
             <textarea class="9PM-task"> </textarea>
@@ -235,7 +243,7 @@
             </div>
           </div>
           <!--10PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>10PM</strong></span>
             <textarea class="10PM-task"> </textarea>
@@ -244,7 +252,7 @@
             </div>
           </div>
           <!--11PM-->
-        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="midnight-task">
+        <div class="col-12 col-lg-9 col-md-6 col-xl-3 mb-3" id="evening-task">
           <div class="card">
             <span class= "task-input"> <strong>11PM</strong></span>
             <textarea class="11PM-task"> </textarea>
@@ -252,7 +260,7 @@
               <ul id="toDo" class= "list-group list-group-flush"></ul>
             </div>
           </div>
-
+          <!--evening row block end-->
         </div>
       </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

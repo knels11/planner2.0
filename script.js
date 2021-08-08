@@ -1,6 +1,4 @@
 //in the card classes, we want to dynamically input tasks into unordered lists for each hour of the day w/ an: id- toDO, class- list-group
-var tasks = {};
-
 var createTask = function(event) {
     var selectedTime = event.target.id;
     var timeTask= $("." + selectedTime + "-task").val();
@@ -8,6 +6,7 @@ var createTask = function(event) {
     console.log($(event).parent().attr("id"));
     //create elements that make a task item
     var taskDate = $("#<>")
+    $("submit-btn").on("click", createTask);
     //target ul and li w p element 
     var taskLi = $("<ul>").addClass("list-group");
     var taskSpan = $("<span>")
@@ -24,6 +23,10 @@ var createTask = function(event) {
     $("#list-" + taskList).append(taskLi);
 };
 
+var deleteTasks = function(event) {
+    var taskLi = $("<ul>")
+    .trim(taskText);
+};
 var loadTasks = function() {
     tasks = JSON.parse(localStorage.getItem("tasks"));
 
@@ -34,7 +37,7 @@ var loadTasks = function() {
         };
     }
     //loop over object properties
-    $.each(taks, function(list,arr) {
+    $.each(tasks, function(list,arr) {
         //then loop over sub-array
         arr.forEach(function(task) {
             createTask(task.text, task.date, list);
@@ -62,3 +65,4 @@ var auditTask = function(taskEl) {
     $(taskEl).removeClass("list-group");
 }
 $(".submit-btn").on("click", createTask);
+$("#remove-tasks").on("click", deleteTasks);
