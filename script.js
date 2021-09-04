@@ -1,4 +1,4 @@
-//in the card classes, we want to dynamically input tasks into unordered lists for each hour of the day w/ an: id- toDO, class- list-group
+//in the card classes, we want to dynamically input tasks into unordered lists for each hour of the day w/ an: id- toDO & class- list-group
 var createTask = function(event) {
     var selectedTime = event.target.id;
     var timeTask= $("." + selectedTime + "-task").val();
